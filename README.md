@@ -9,4 +9,5 @@ Made on 12/16/2020 (MM/DD/YYYY)
 
 ## Invite Link
 Change `BOTID` to your discord bot's ID. Can be found at https://discord.com/developers/applications
+
 Example: `https://discord.com/oauth2/authorize?client_id=BOTID&scope=bot+applications.commands`
