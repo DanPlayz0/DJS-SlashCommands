@@ -28,12 +28,14 @@ client.on('ready', async () => {
         name: 'ping',
         description: 'The bot\'s ping'
       }})
-    } else if(!client.gcommands[g.id].map(m => m.name).includes('dumbass')) {
+    }
+    if(!client.gcommands[g.id].map(m => m.name).includes('dumbass')) {
       client.api.applications(client.user.id).guilds(g.id).commands.post({data: {
         name: 'dumbass',
         description: 'Your a dumbass'
       }})
-    } else if(!client.gcommands[g.id].map(m => m.name).includes('permissions')) {
+    }
+    if(!client.gcommands[g.id].map(m => m.name).includes('permissions')) {
       client.api.applications(client.user.id).guilds(g.id).commands.post({data: {
         "name": "permissions",
         "description": "Get or edit permissions for a user or a role",
